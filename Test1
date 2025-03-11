@@ -1,0 +1,86 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/daucobonhi/Ui-Redz-V2/refs/heads/main/UiREDzV2.lua")))()
+local ApiHop = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangNguyenk8/Scripts/refs/heads/main/Test.lua'))()
+
+       local Window = MakeWindow({
+         Hub = {
+         Title = "TomHub",
+         Animation = "YTB: Tom"
+         },
+        Key = {
+        KeySystem = true,
+        Title = "Get Key",
+        Description = "Tom Hub Auto Hop (FREE)",
+        KeyLink = "",
+        Keys = {"teddyseetinkvaicut"},
+        Notifi = {
+        Notifications = false,
+        CorrectKey = "Đang chạy script...",
+       Incorrectkey = "Key sai",
+       CopyKeyLink = "Đã sao chép"
+      }
+    }
+  })
+
+       MinimizeButton({
+       Image = "http://www.roblox.com/asset/?id=129732537380265",
+       Size = {50, 50},
+       Color = Color3.fromRGB(10, 10, 10),
+       Corner = true,
+       Stroke = false,
+       StrokeColor = Color3.fromRGB(255, 0, 0)
+      })
+      
+------ Tab
+     local Tab1o = MakeTab({Name = "Trang chủ"})
+     
+     
+-------TOGGLE 
+
+     Toggle = AddToggle(Tab1o, {
+      Name = "YTB: Tom",
+      Default = true,
+      Callback = function()
+     end
+    })
+    
+------- BUTTON
+    
+    local HopTab = Window:MakeTab({Title = "HopBoss", Icon = "server"})
+HopTab:AddButton({
+    Title = "Hop Dough King",
+    Callback = function()
+        ApiHop:HopDoughKing()
+    end
+})
+HopTab:AddButton({
+    Title = "Hop Rip Indra",
+    Callback = function()
+        ApiHop:HopRipindra()
+    end
+})
+HopTab:AddButton({
+    Title = "Hop Mirage",
+    Callback = function()
+        ApiHop:HopMirage()
+    end
+})
+AddButton(Tab1o, {
+     Name = "Auto Hop Black beard boss (Wait Update)",
+    Callback = function()
+end
+})
+AddButton(Tab1o, {
+     Name = "Auto Hop legendery sword (Wait Update)",
+    Callback = function()
+end
+})
+AddButton(Tab1o, {
+     Name = "Auto Hop Full Moon (Wait Update)",
+    Callback = function()
+end
+})
+AddButton(Tab1o, {
+     Name = "Auto Hop Haki Legendery (Wait Update)",
+    Callback = function()
+end
+})
