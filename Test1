@@ -7,7 +7,7 @@ local ApiHop = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangN
          Animation = "YTB: Tom"
          },
         Key = {
-        KeySystem = false,
+        KeySystem = true,
         Title = "Get Key",
         Description = "Tom Hub Auto Hop (FREE)",
         KeyLink = "",
@@ -45,7 +45,7 @@ local ApiHop = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangN
     
 ------- BUTTON
     
-    local HopTab = Window:MakeTab({Title = "HopBoss", Icon = "server"})
+local HopTab = Window:MakeTab({Title = "HopBoss", Icon = "server"})
 HopTab:AddButton({
     Title = "Hop Dough King",
     Callback = function()
@@ -58,8 +58,8 @@ HopTab:AddButton({
         ApiHop:HopRipindra()
     end
 })
-HopTab:AddButton({
-    Title = "Hop Mirage",
+AddButton(Tab1o, {
+    Name = "Hop Mirage",
     Callback = function()
         ApiHop:HopMirage()
     end
