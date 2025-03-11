@@ -7,7 +7,7 @@ local ApiHop = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangN
          Animation = "YTB: Tom"
          },
         Key = {
-        KeySystem = true,
+        KeySystem = false,
         Title = "Get Key",
         Description = "Tom Hub Auto Hop (FREE)",
         KeyLink = "",
